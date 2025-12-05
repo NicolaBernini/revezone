@@ -33,5 +33,13 @@
   .ant-menu-title-content {
     flex: auto;
   }
- 
+}
+
+/* Dark theme styles for resizable layout */
+.theme-dark .revezone-layout {
+  background-color: #141414;
+}
+
+.theme-dark .revezone-layout .ant-layout {
+  background-color: #141414;
 }

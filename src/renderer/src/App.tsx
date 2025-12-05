@@ -1,12 +1,12 @@
 import { lazy, useCallback, useEffect } from 'react';
 import { useAtom } from 'jotai';
-import { langCodeAtom } from './store/jotai';
+import { langCodeAtom, themeAtom } from './store/jotai';
 import WorkspaceLoaded from './components/WorkspaceLoaded';
 import zhCN from 'antd/locale/zh_CN';
 import zhTW from 'antd/locale/zh_TW';
 import enUS from 'antd/locale/en_US';
 import { ConfigProvider, message } from 'antd';
-import { theme } from './utils/theme';
+import { getTheme } from './utils/theme';
 import { getOSName, isInRevezoneApp } from './utils/navigator';
 import ResizableLayout from './components/ResizableLayout/index';
 import useAddFile from '@renderer/hooks/useAddFile';
@@ -34,6 +34,7 @@ const OS_NAME = getOSName();
 
 function App(): JSX.Element {
   const [langCode] = useAtom(langCodeAtom);
+  const [theme] = useAtom(themeAtom);
   const { addFile } = useAddFile();
   const { model: tabModel, updateTabJsonModelWhenCurrentFileChanged } = useTabJsonModel();
   const { updateCurrentFile } = useCurrentFile();
@@ -120,11 +121,11 @@ function App(): JSX.Element {
   }, [langCode]);
 
   return (
-    <ConfigProvider locale={getLocale()} theme={theme}>
+    <ConfigProvider locale={getLocale()} theme={getTheme(theme)}>
       <div
         className={`revezone-app-container os-is-${OS_NAME.toLowerCase()} ${
           isInRevezoneApp ? 'is-in-revezone-native-app' : 'is-in-browser'
-        }`}
+        } theme-${theme}`}
       >
         <ResizableLayout>
           <WorkspaceLoaded>

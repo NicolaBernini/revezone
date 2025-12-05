@@ -37,4 +37,15 @@ object {
   @apply flex items-center cursor-pointer hover:text-sky-500;
 }
 
+/* Dark theme base styles */
+.theme-dark {
+  background-color: #141414;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.theme-dark body {
+  background-color: #141414;
+  color: rgba(255, 255, 255, 0.85);
+}
+
 

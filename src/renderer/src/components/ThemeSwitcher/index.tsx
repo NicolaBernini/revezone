@@ -1,13 +1,19 @@
 import { useAtom } from 'jotai';
 import { themeAtom } from '@renderer/store/jotai';
 import { Select } from 'antd';
+import { setThemeToLocal } from '@renderer/store/localstorage';
 
 export default function ThemeSwitcher() {
   const [theme, setTheme] = useAtom(themeAtom);
 
+  const handleThemeChange = (value: 'light' | 'dark') => {
+    setTheme(value);
+    setThemeToLocal(value);
+  };
+
   return (
     <Select
-      onChange={(value) => setTheme(value)}
+      onChange={handleThemeChange}
       onClick={(e) => e.stopPropagation()}
       bordered={false}
       value={theme}

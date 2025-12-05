@@ -4,7 +4,8 @@ import { RevezoneFile, RevezoneFolder, RevezoneFileTree } from '@renderer/types/
 import {
   getCurrentFileFromLocal,
   getOpenKeysFromLocal,
-  getSelectedKeysFromLocal
+  getSelectedKeysFromLocal,
+  getThemeFromLocal
 } from './localstorage';
 
 import { DEFAULT_TAB_JSON_MODEL } from '@renderer/utils/constant';
@@ -25,7 +26,7 @@ export const siderbarCollapsedAtom = atom(false);
 
 export const langCodeAtom = atom('en');
 
-export const themeAtom = atom<Theme>('light');
+export const themeAtom = atom<Theme>(getThemeFromLocal());
 
 export const tabJsonModelAtom = atom<IJsonModel>(DEFAULT_TAB_JSON_MODEL);
 export const tabModelAtom = atom<Model | undefined>(undefined);

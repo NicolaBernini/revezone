@@ -39,3 +39,37 @@
     @apply pl-10;
   }
 }
+
+/* Dark theme styles for flex layout tabs */
+.theme-dark .flexlayout__layout {
+  background-color: #141414;
+}
+
+.theme-dark .flexlayout__tabset-selected {
+  background-color: #1f1f1f;
+}
+
+.theme-dark .flexlayout__tab_button {
+  @apply text-neutral-300;
+}
+
+.theme-dark .flexlayout__tab_button.flexlayout__tab_button--selected {
+  @apply text-white bg-zinc-800 border-b-zinc-600;
+}
+
+.theme-dark .flexlayout__tab_button:hover {
+  @apply text-neutral-200 bg-zinc-700;
+}
+
+.theme-dark .flexlayout__tabset_tabbar_outer_top {
+  @apply border-zinc-800;
+  background-color: #141414;
+}
+
+.theme-dark .flexlayout__tabset_header {
+  background-color: #141414;
+}
+
+.theme-dark .tab_content {
+  background-color: #1f1f1f;
+}

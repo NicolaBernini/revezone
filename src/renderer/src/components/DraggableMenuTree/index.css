@@ -12,5 +12,30 @@
     height: 100%;
     padding-bottom: 2rem;
   }
- 
+}
+
+/* Dark theme styles for menu tree */
+.theme-dark .revezone-menu-container {
+  background-color: #141414;
+}
+
+.theme-dark .rct-tree-root {
+  background-color: #141414;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.theme-dark .rct-tree-item-li {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.theme-dark .rct-tree-item-title-container {
+  background-color: #141414;
+}
+
+.theme-dark .rct-tree-item-title-container:hover {
+  background-color: #262626;
+}
+
+.theme-dark .rct-tree-item-title-container-selected {
+  background-color: #1f1f1f;
 }

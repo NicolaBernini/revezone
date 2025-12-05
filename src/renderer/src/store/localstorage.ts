@@ -13,6 +13,7 @@ const LOCALSTORAGE_TAB_JSON_MODEL = 'tab_json_model';
 const LOCALSTORAGE_RENAMING_MENU_ITEM_ID = 'renaming_menu_item_id';
 const LOCALSTORAGE_OLD_MENU_INDEXEDDB_SYNC = 'old_menu_indexeddb_synced';
 const LOCALSTORAGE_IS_USER_GUIDE_SHOWED = 'is_user_guide_showed';
+const LOCALSTORAGE_THEME = 'theme';
 
 export const getOpenKeysFromLocal = (): string[] => {
   const localStr = localStorage.getItem(LOCALSTORAGE_MENU_OPEN_KEYS);
@@ -116,4 +117,13 @@ export const getIsUserGuideShowed = (): boolean => {
   }
   const localStr = localStorage.getItem(LOCALSTORAGE_IS_USER_GUIDE_SHOWED);
   return Boolean(localStr);
+};
+
+export const setThemeToLocal = (theme: 'light' | 'dark') => {
+  localStorage.setItem(LOCALSTORAGE_THEME, theme);
+};
+
+export const getThemeFromLocal = (): 'light' | 'dark' => {
+  const theme = localStorage.getItem(LOCALSTORAGE_THEME);
+  return (theme === 'dark' ? 'dark' : 'light') as 'light' | 'dark';
 };

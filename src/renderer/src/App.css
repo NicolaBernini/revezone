@@ -13,4 +13,50 @@
   }
 }
 
+/* Dark theme styles */
+.revezone-app-container.theme-dark {
+  background-color: #141414;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.theme-dark .flexlayout__layout {
+  background-color: #1f1f1f;
+}
+
+.theme-dark .flexlayout__tab {
+  background-color: #1f1f1f;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.theme-dark .flexlayout__tab_button {
+  background-color: #262626;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.theme-dark .flexlayout__tab_button--selected {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.theme-dark .flexlayout__tabset {
+  background-color: #1f1f1f;
+}
+
+.theme-dark .flexlayout__tabset_header {
+  background-color: #141414;
+  border-bottom-color: #303030;
+}
+
+.theme-dark .flexlayout__splitter {
+  background-color: #303030;
+}
+
+.theme-dark .flexlayout__border {
+  background-color: #1f1f1f;
+}
+
+.theme-dark .panel-left-button {
+  color: rgba(255, 255, 255, 0.85);
+}
+
 
