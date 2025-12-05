@@ -21,3 +21,83 @@
   }
 
 }
+
+/* Dark theme for BlockSuite editor */
+.theme-dark .blocksuite-editor-container {
+  --affine-text-primary-color: rgba(255, 255, 255, 0.85);
+  --affine-link-color: rgb(96, 165, 250);
+  --affine-background-primary-color: #2a2a2a;
+  --affine-background-secondary-color: #262626;
+  --affine-background-code-block: #1e1e1e;
+  --affine-quote-color: rgba(255, 255, 255, 0.45);
+  --affine-divider-color: rgba(255, 255, 255, 0.15);
+  --affine-placeholder-color: rgba(255, 255, 255, 0.35);
+  --affine-icon-color: rgba(255, 255, 255, 0.65);
+  --affine-border-color: rgba(255, 255, 255, 0.15);
+
+  background-color: #2a2a2a;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.theme-dark .blocksuite-editor-container .affine-paragraph-block-container,
+.theme-dark .blocksuite-editor-container .affine-list-block-container,
+.theme-dark .blocksuite-editor-container .affine-code-block-container,
+.theme-dark .blocksuite-editor-container .affine-page-block-container,
+.theme-dark .blocksuite-editor-container .affine-default-page-block-container {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Code blocks */
+.theme-dark .blocksuite-editor-container .affine-code-block-container,
+.theme-dark .blocksuite-editor-container .affine-code-block-container code,
+.theme-dark .blocksuite-editor-container .affine-code-block-container pre {
+  background-color: #1e1e1e !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* All elements that might have white backgrounds */
+.theme-dark .blocksuite-editor-container [data-block-id],
+.theme-dark .blocksuite-editor-container .affine-block-children-container,
+.theme-dark .blocksuite-editor-container .affine-rich-text {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Inline code */
+.theme-dark .blocksuite-editor-container code {
+  background-color: #1e1e1e;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Quote blocks */
+.theme-dark .blocksuite-editor-container .affine-quote-block-container {
+  border-left-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Dividers */
+.theme-dark .blocksuite-editor-container .affine-divider-block-container {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Placeholders */
+.theme-dark .blocksuite-editor-container [data-placeholder]:empty::before,
+.theme-dark .blocksuite-editor-container ::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+/* Selection */
+.theme-dark .blocksuite-editor-container ::selection {
+  background-color: rgba(96, 165, 250, 0.3);
+}
+
+/* Borders and lines */
+.theme-dark .blocksuite-editor-container .affine-block-children-container {
+  border-left-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Any remaining white backgrounds */
+.theme-dark .blocksuite-editor-container *[style*="background-color: white"],
+.theme-dark .blocksuite-editor-container *[style*="background-color: #fff"],
+.theme-dark .blocksuite-editor-container *[style*="background-color: rgb(255, 255, 255)"] {
+  background-color: #2a2a2a !important;
+}

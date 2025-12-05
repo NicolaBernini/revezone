@@ -12,3 +12,75 @@
   }
 
 }
+
+/* Dark theme for Tldraw */
+.theme-dark .tldraw-editor-container {
+  background-color: #2a2a2a;
+}
+
+.theme-dark .tldraw-editor-container .tl-container {
+  background-color: #2a2a2a !important;
+}
+
+.theme-dark .tldraw-editor-container .tlui-layout {
+  background-color: #2a2a2a;
+}
+
+.theme-dark .tldraw-editor-container .tl-canvas {
+  background-color: #2a2a2a;
+}
+
+.theme-dark .tldraw-editor-container .tlui-menu,
+.theme-dark .tldraw-editor-container .tlui-toolbar,
+.theme-dark .tldraw-editor-container .tlui-navigation-panel,
+.theme-dark .tldraw-editor-container .tlui-style-panel {
+  background-color: #1e1e1e;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.theme-dark .tldraw-editor-container .tlui-button {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.theme-dark .tldraw-editor-container .tlui-button:hover {
+  background-color: #2a2a2a;
+}
+
+/* Inputs and dropdowns */
+.theme-dark .tldraw-editor-container input,
+.theme-dark .tldraw-editor-container select,
+.theme-dark .tldraw-editor-container textarea {
+  background-color: #1e1e1e !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  border-color: #404040;
+}
+
+/* Dropdown menus */
+.theme-dark .tldraw-editor-container .tlui-menu__group,
+.theme-dark .tldraw-editor-container .tlui-popover,
+.theme-dark .tldraw-editor-container .tlui-dropdown__content {
+  background-color: #262626;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.theme-dark .tldraw-editor-container .tlui-menu-item {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.theme-dark .tldraw-editor-container .tlui-menu-item:hover {
+  background-color: #2a2a2a;
+}
+
+/* Any white backgrounds in tldraw */
+.theme-dark .tldraw-editor-container *[style*="background-color: white"],
+.theme-dark .tldraw-editor-container *[style*="background-color: #fff"],
+.theme-dark .tldraw-editor-container *[style*="background-color: rgb(255, 255, 255)"] {
+  background-color: #2a2a2a !important;
+}
+
+/* Dialog backgrounds */
+.theme-dark .tldraw-editor-container .tlui-dialog,
+.theme-dark .tldraw-editor-container .tlui-dialog__body {
+  background-color: #262626;
+  color: rgba(255, 255, 255, 0.85);
+}

@@ -13,3 +13,78 @@
   width: 0.8rem;
   height: 0.8rem;
 }
+
+/* Dark theme for Excalidraw board */
+.theme-dark .excalidraw {
+  --color-surface-primary: #2a2a2a;
+  --color-surface-secondary: #262626;
+  --color-text-primary: rgba(255, 255, 255, 0.85);
+  --color-text-secondary: rgba(255, 255, 255, 0.65);
+  --island-bg-color: #1e1e1e;
+  --button-gray-1: #2a2a2a;
+  --button-gray-2: #262626;
+  --input-bg-color: #1e1e1e;
+  --input-border-color: #404040;
+  --overlay-bg-color: rgba(30, 30, 30, 0.9);
+}
+
+.theme-dark .excalidraw .App-menu_top,
+.theme-dark .excalidraw .App-toolbar,
+.theme-dark .excalidraw .App-bottom-bar {
+  background-color: #1e1e1e;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.theme-dark .excalidraw .Island {
+  background-color: #1e1e1e !important;
+}
+
+.theme-dark .excalidraw button,
+.theme-dark .excalidraw .ToolIcon {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.theme-dark .excalidraw .dropdown-menu {
+  background-color: #262626;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.theme-dark .excalidraw .dropdown-menu-item {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.theme-dark .excalidraw .dropdown-menu-item:hover {
+  background-color: #2a2a2a;
+}
+
+.theme-dark .excalidraw input,
+.theme-dark .excalidraw textarea,
+.theme-dark .excalidraw select {
+  background-color: #1e1e1e !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  border-color: #404040;
+}
+
+.theme-dark .excalidraw .App-menu_left {
+  background-color: #1e1e1e;
+}
+
+/* Dialog and modal backgrounds */
+.theme-dark .excalidraw .Modal,
+.theme-dark .excalidraw .Dialog {
+  background-color: #262626;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Any white backgrounds in excalidraw */
+.theme-dark .excalidraw *[style*="background-color: white"],
+.theme-dark .excalidraw *[style*="background-color: #fff"],
+.theme-dark .excalidraw *[style*="background-color: rgb(255, 255, 255)"] {
+  background-color: #2a2a2a !important;
+}
+
+/* Text colors */
+.theme-dark .excalidraw .dropdown-select__label,
+.theme-dark .excalidraw .ToolIcon__label {
+  color: rgba(255, 255, 255, 0.85);
+}

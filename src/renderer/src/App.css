@@ -59,4 +59,39 @@
   color: rgba(255, 255, 255, 0.85);
 }
 
+/* Dark theme for Welcome page */
+.theme-dark .revezone-welcome-page {
+  background-color: #2a2a2a;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.theme-dark .revezone-welcome-page .text-slate-400,
+.theme-dark .revezone-welcome-page .text-slate-600 {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.theme-dark .revezone-welcome-page .text-base {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.theme-dark .revezone-welcome-page a {
+  color: rgb(96, 165, 250);
+}
+
+.theme-dark .revezone-welcome-page a:hover {
+  color: rgb(147, 197, 253);
+}
+
+/* Global dark theme text color fix */
+.theme-dark input,
+.theme-dark textarea,
+.theme-dark select {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Ensure no white backgrounds slip through */
+.theme-dark .tab_content > * {
+  color: rgba(255, 255, 255, 0.85);
+}
+
 
